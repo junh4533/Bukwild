@@ -39,6 +39,7 @@ const CustomNav = (props) => {
     props.onClickLink("industries");
   }, []);
   
+  // send page slug to parent component upon clicking navlink
   const handleNavClick = (e) => {
     const slug = e.currentTarget.attributes['data-slug'].value;
     props.onClickLink(slug);
@@ -49,6 +50,7 @@ const CustomNav = (props) => {
     <Navigation>
       <a href="#" className="contact-button">Contact Us</a>
       <a href="#"> <img src={Logo} alt="ABC Logo" /></a>
+      // toggle active class and state when link is clicked
       <a href="#" className={"text-style " + (activeLink === 'industries' ? 'active' : '') } data-slug="industries" onClick={handleNavClick}>Industries</a>
       <a href="#" className={"text-style " + (activeLink === 'services' ? 'active' : '') } data-slug="services" onClick={handleNavClick}>Services</a>
       <a href="#" className={"text-style " + (activeLink === 'about-us' ? 'active' : '') } data-slug="about-us" onClick={handleNavClick}>About Us</a>

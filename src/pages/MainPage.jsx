@@ -37,7 +37,6 @@ const Marquee = styled.div`
       letter-spacing: .053rem;
     }
 
-    
     @media only screen and (min-width: 992px) {
       .headline {
         flex: 0 0 50%;
@@ -68,35 +67,13 @@ const Marquee = styled.div`
       align-items: center;
     }
   }
-
-  .shrink-enter {
-transform: translateX(-100%);
-        transform: translateX(0%);
-  }
-
-  .fade-enter {
-  opacity: 0.01;
-}
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.fade-leave {
-  opacity: 1;
-}
-
-.fade-leave.fade-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
 `
 
 const MainPage = () => {
   const [marqueeContent, setMarqueeContent] = useState([]);
 
   const updateMarquee = (slug) => {
+    // find marquee content based on matching slug 
     const matchingPage = Content.pages.filter(page=> {
       return page.slug == slug;
     });
