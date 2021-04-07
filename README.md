@@ -1,13 +1,12 @@
-## Running React on Repl.it
+## Jun Huang - Marquee Test for Bukwild
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
-
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
-
-Using the two in conjunction is one of the fastest ways to build a web app.
+Thank you for checking out my demo! 
 
 ### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+Click on the link below to demo it.
 
-By default, Repl.it runs the `dev` script, but you can configure it by changing the `run` field in the `.replit` file.
+[repl.it](https://replit.com/@junh4533/Bukwild)
+
+### Links
+- [My Portfolio](https://junh4533.github.io/)
+- [My LinkedIn](https://www.linkedin.com/in/jun-huang1//)
